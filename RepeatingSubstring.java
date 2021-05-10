@@ -28,7 +28,7 @@ public class RepeatingSubstring {
 		return subString(textOne,0,length);
 	}
 	
-    public static boolean isRepeated(String text1, String text2)
+    public static boolean isOverlapped(String text1, String text2)
     {
         boolean alphabet[]=new boolean[MAX_CHAR];
         for (int i = 0; i < text1.length(); i++)
@@ -72,7 +72,7 @@ public class RepeatingSubstring {
 
 		for(int i=0;i<k;i++) {
 			for(int j=i+1;j<k;j++) {
-				if(isRepeated(nonRepeatedArray[i],nonRepeatedArray[j])) {
+				if(isOverlapped(nonRepeatedArray[i],nonRepeatedArray[j])) {
 					if(nonRepeatedArray[i].length()>nonRepeatedArray[j].length()) {
 						nonRepeatedArray[j]="";
 					}
